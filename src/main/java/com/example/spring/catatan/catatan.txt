@@ -1,0 +1,8 @@
+LIFE CYCLE
+
+Spring memiliki lifecycle, namun secara default tidak ditunjukkan.
+
+Bagaimana mengetahui Lifecyclenya?
+Implementasikan sebuah interface InitializingBean(Mulai) dan DisposableBean(End)
+
+Dalam testing tersebut, Kita menggunakan ConfigurableApplicationContext untuk aplikasinya (turunan dari ApplicationContext) agar bisa menutup koneksi
