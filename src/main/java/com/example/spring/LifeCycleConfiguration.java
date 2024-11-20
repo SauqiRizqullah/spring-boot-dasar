@@ -1,6 +1,7 @@
 package com.example.spring;
 
 import com.example.spring.data.Connection;
+import com.example.spring.data.Server;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,5 +12,10 @@ public class LifeCycleConfiguration {
     public Connection connection(){
         return new Connection();
     }
+
+    @Bean(initMethod = "start", destroyMethod = "stop")
+    public Server server(){
+        return new Server();
+    };
 
 }
