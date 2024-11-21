@@ -10,11 +10,11 @@ public class Connection implements InitializingBean, DisposableBean {
 
     @Override
     public void destroy() throws Exception {
-      log.info("Koneksi sudah dibuka");
+      log.info("Koneksi sudah ditutup");
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        log.info("Koneksi sudah ditutup");
+        log.info("Koneksi sudah dibuka");
     }
 }
