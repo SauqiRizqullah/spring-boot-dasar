@@ -1,6 +1,8 @@
 package com.example.spring;
 
+import com.example.spring.repository.CategoryService;
 import com.example.spring.repository.ProductRepository;
+import com.example.spring.service.CategoryRepository;
 import com.example.spring.service.ProductService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -35,5 +37,14 @@ public class ComponentTest {
 
 
     }
+
+    @Test
+    void testSetterDI(){
+        CategoryService categoryService = context.getBean(CategoryService.class);
+        CategoryRepository categoryRepository = context.getBean(CategoryRepository.class);
+
+        Assertions.assertSame(categoryService.getCategoryRepository(), categoryRepository);
+    }
+
 
 }
