@@ -1,6 +1,6 @@
-package com.example.spring.repository;
+package com.example.spring.service;
 
-import com.example.spring.service.CategoryRepository;
+import com.example.spring.repository.CategoryRepository;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

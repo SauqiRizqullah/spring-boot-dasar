@@ -1,8 +1,10 @@
 package com.example.spring;
 
-import com.example.spring.repository.CategoryService;
+import com.example.spring.repository.CustomerRepository;
+import com.example.spring.service.CategoryService;
 import com.example.spring.repository.ProductRepository;
-import com.example.spring.service.CategoryRepository;
+import com.example.spring.repository.CategoryRepository;
+import com.example.spring.service.CustomerService;
 import com.example.spring.service.ProductService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -46,5 +48,15 @@ public class ComponentTest {
         Assertions.assertSame(categoryService.getCategoryRepository(), categoryRepository);
     }
 
+    @Test
+    void testFieldDI(){
+        CustomerService customerService = context.getBean(CustomerService.class);
+        CustomerRepository normalCustomerRepository = context.getBean("normalCustomerRepository" , CustomerRepository.class);
+        CustomerRepository premiumCustomerRepository = context.getBean("premiumCustomerRepository", CustomerRepository.class);
+
+        Assertions.assertSame(customerService.getNormalCustomerRepository(), normalCustomerRepository);
+        Assertions.assertSame(customerService.getPremiumCustomerRepository(), premiumCustomerRepository);
+
+    }
 
 }

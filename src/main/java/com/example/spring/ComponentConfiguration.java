@@ -6,7 +6,8 @@ import org.springframework.stereotype.Component;
 
 @ComponentScan(basePackages = {
         "com.example.spring.service",
-        "com.example.spring.repository"
+        "com.example.spring.repository",
+        "com.example.spring.configuration"
 }
 )
 @Configuration
