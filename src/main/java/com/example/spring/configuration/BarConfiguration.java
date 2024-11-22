@@ -9,4 +9,6 @@ public class BarConfiguration {
 
     @Bean
     public Bar bar(){return new Bar();}
+
+
 }

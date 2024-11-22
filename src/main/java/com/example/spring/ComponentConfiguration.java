@@ -5,7 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @ComponentScan(basePackages = {
-        "com.example.spring.service"
+        "com.example.spring.service",
+        "com.example.spring.repository"
 }
 )
 @Configuration

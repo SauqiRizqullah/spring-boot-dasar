@@ -11,3 +11,13 @@ LIFE CYCLE ANNOTATION
 Bean adalah interface yang memiliki value
 - initMethod (untuk menjalankan server)
 - destroyMethod (untuk menutup server)
+
+IMPORT
+=> Memasukkan beberapa class configuration
+
+COMPONENTSCAN
+=> Sama seperti import namun lebih praktis karena scan package
+
+COMPONENT
+=> Otomatis membuat bean dari class tersebut dan nama bean menjadi camelCase (mewakili bean dan configuration)
+=> Also, component juga didukung oleh beberapa annotation seperti lazy, scope, dsb.
