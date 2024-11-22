@@ -1,5 +1,6 @@
 package com.example.spring;
 
+import com.example.spring.data.MultiFoo;
 import com.example.spring.repository.CustomerRepository;
 import com.example.spring.service.CategoryService;
 import com.example.spring.repository.ProductRepository;
@@ -57,6 +58,13 @@ public class ComponentTest {
         Assertions.assertSame(customerService.getNormalCustomerRepository(), normalCustomerRepository);
         Assertions.assertSame(customerService.getPremiumCustomerRepository(), premiumCustomerRepository);
 
+    }
+
+    @Test
+    void testObjectProvider(){
+        MultiFoo multiFoo = context.getBean(MultiFoo.class);
+
+        Assertions.assertEquals(3, multiFoo.getFoos().size());
     }
 
 }

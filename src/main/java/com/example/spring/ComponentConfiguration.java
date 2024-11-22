@@ -1,7 +1,9 @@
 package com.example.spring;
 
+import com.example.spring.data.MultiFoo;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 
 @ComponentScan(basePackages = {
@@ -11,5 +13,6 @@ import org.springframework.stereotype.Component;
 }
 )
 @Configuration
+@Import(MultiFoo.class)
 public class ComponentConfiguration {
 }
