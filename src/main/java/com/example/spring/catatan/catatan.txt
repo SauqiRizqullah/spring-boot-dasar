@@ -53,3 +53,6 @@ BEAN FACTORY
 
 LISTABLE BEAN FACTORY
 => Mengakses beberapa bean sekaligus
+
+BEAN POST PROCESSOR
+=> Interface turunan dari Bean Factory, gunanya untuk modifikasi pembuatan bean
