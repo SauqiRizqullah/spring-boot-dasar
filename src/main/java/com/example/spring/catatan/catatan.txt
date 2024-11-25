@@ -21,3 +21,29 @@ COMPONENTSCAN
 COMPONENT
 => Otomatis membuat bean dari class tersebut dan nama bean menjadi camelCase (mewakili bean dan configuration)
 => Also, component juga didukung oleh beberapa annotation seperti lazy, scope, dsb.
+
+CONSTRUCTOR-BASED DI
+=> Membuat bean dengan meng-inject constructor paramater di class tersebut, nanti akan dicarikan bean parameter tersebut
+=> Bila ada lebih dari 1 constructor, wajib menggunakan Autowired pada constructor yang dibuat default
+
+SETTER-BASED DI
+=> Menambahkan Autowired pada setter
+
+FIELD-BASED DI
+=> Menambahkan Autowired pada field
+
+QUALIFIER
+=> Memilih bean secara manual bila bean dengan tipe data yang sama lebih dari 1 (bisa digunakan pada constructor DI, setter DI, field DI)
+
+OPTIONAL
+=> Return beannya ketika ada, null ketika tidak ada
+
+OBJECT PROVIDER
+=> Return beannya lebih dari satu
+
+FACTORY BEAN
+=> Membuat bean dengan class third party (bukan milik kita)
+
+INHERITANCE
+=> Mengakses bean parent / interface
+=> Kegunaannya apa? ketika ingin mengubah implementasinya, cukup ubah si impl nya tanpa mengubah interfacenya
