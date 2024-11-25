@@ -47,3 +47,9 @@ FACTORY BEAN
 INHERITANCE
 => Mengakses bean parent / interface
 => Kegunaannya apa? ketika ingin mengubah implementasinya, cukup ubah si impl nya tanpa mengubah interfacenya
+
+BEAN FACTORY
+=> Method yang ada di AppContext itu milik BF, BF memiliki method untuk manage bean
+
+LISTABLE BEAN FACTORY
+=> Mengakses beberapa bean sekaligus
