@@ -65,3 +65,6 @@ AWARE
 
 BEAN FACTORY POST PROCESSOR
 => Memodifikasi application context, mendaftarkan bean dengan cara programatik
+
+EVENT LISTENER
+=> Komunikasi antar class. Event turunan dari ApplicationEvent, Listener turunan dari ApplicationListener
