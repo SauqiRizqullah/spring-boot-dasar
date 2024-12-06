@@ -62,3 +62,6 @@ ORDERED
 
 AWARE
 => Memberi tanda bahwa spring melakukan DI
+
+BEAN FACTORY POST PROCESSOR
+=> Memodifikasi application context, mendaftarkan bean dengan cara programatik
