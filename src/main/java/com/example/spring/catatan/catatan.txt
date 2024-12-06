@@ -68,3 +68,7 @@ BEAN FACTORY POST PROCESSOR
 
 EVENT LISTENER
 => Komunikasi antar class. Event turunan dari ApplicationEvent, Listener turunan dari ApplicationListener
+
+SPRING BOOT APPLICATION
+=> Beberapa anotasi seperti configuration, componentscan, dll digabung dalam satu paket, yaitu anotasi SpringBootApplication
+=> Membuat Application Context secara otomatis (ComponentScan => SpringBootApplication)
