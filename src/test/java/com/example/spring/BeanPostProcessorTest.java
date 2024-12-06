@@ -2,6 +2,7 @@ package com.example.spring;
 
 import com.example.spring.data.Car;
 import com.example.spring.processor.IdGeneratorBeanPostProcessor;
+import com.example.spring.processor.PrefixIdGeneratorBeanPostProcessor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +16,8 @@ public class BeanPostProcessorTest {
     @Configuration
     @Import({
             Car.class,
-            IdGeneratorBeanPostProcessor.class
+            IdGeneratorBeanPostProcessor.class,
+            PrefixIdGeneratorBeanPostProcessor.class
     })
     public static class TestConfiguration {
 
@@ -33,6 +35,8 @@ public class BeanPostProcessorTest {
     void testIdAware(){
         Car bean = context.getBean(Car.class);
         Assertions.assertNotNull(bean.getId());
+
+        System.out.println(bean.getId());
     }
 
 }
