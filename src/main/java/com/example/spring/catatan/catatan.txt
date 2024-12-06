@@ -59,3 +59,6 @@ BEAN POST PROCESSOR
 
 ORDERED
 => Interface yang menentukan urutan siklus sebelum dan sesudah pembuatan bean
+
+AWARE
+=> Memberi tanda bahwa spring melakukan DI
