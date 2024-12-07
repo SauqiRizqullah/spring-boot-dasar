@@ -75,3 +75,7 @@ SPRING BOOT APPLICATION
 
 FAILURE ANALYZER
 => Menganalisis failure startup pada aplikasi
+=> Ketika bar menjadi parameter pada bean Foo di FooApp, maka bar harus digunakan dalam method itu (mengatasi error parameter 0)
+
+SPRING APPLICATION
+=> Kita bisa mengubah pengaturan spring application sebelum membuat ApplicationContext. Terdapat beberapa method untuk mengubah pengaturan.
