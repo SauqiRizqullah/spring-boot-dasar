@@ -1,6 +1,5 @@
-package com.example.spring;
+package com.example.spring.application;
 
-import com.example.spring.application.FooApplication;
 import com.example.spring.data.Foo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

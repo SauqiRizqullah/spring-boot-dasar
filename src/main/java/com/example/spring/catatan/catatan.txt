@@ -72,3 +72,6 @@ EVENT LISTENER
 SPRING BOOT APPLICATION
 => Beberapa anotasi seperti configuration, componentscan, dll digabung dalam satu paket, yaitu anotasi SpringBootApplication
 => Membuat Application Context secara otomatis (ComponentScan => SpringBootApplication)
+
+FAILURE ANALYZER
+=> Menganalisis failure startup pada aplikasi
