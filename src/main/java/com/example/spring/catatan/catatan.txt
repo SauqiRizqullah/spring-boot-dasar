@@ -79,3 +79,6 @@ FAILURE ANALYZER
 
 SPRING APPLICATION
 => Kita bisa mengubah pengaturan spring application sebelum membuat ApplicationContext. Terdapat beberapa method untuk mengubah pengaturan.
+
+SPRING APPLICATION EVENT
+=> Beberapa event di spring boot event di trigger sebelum application context dibuat
